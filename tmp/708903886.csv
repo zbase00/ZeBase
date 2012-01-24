@@ -1,0 +1,5 @@
+batch_ID,gender,name,status,birthday,death_date,username,strain,mutant,transgene,generation,current_adults,starting_nursery
+208,,"bla bla fish",Alive,10/25/2011,,admin,,,,,210,210
+209,,"temp bla bla",Alive,,,admin,,,,,3,3
+210,,asdf,Alive,,,admin,,,,,,
+211,,asdfasdf,Alive,,,admin,,,,,,

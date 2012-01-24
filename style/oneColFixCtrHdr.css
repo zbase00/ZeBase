@@ -1,0 +1,197 @@
+@charset "UTF-8";
+body {
+	margin: 0;
+	padding: 0;
+	color: #000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: .8em;
+	line-height: 1.4;
+	background-color: #f8f8f8;
+	background-image: url(images/background.jpg);
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+.lavalamp {  
+    position: relative;  
+    border: 1px solid #d6d6d6;  
+    background: #fff;  
+    padding: 15px;  
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);  
+    -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);  
+    border-radius : 10px;  
+    -moz-border-radius : 10px;  
+    -webkit-border-radius : 10px;  
+    background : -webkit-gradient(linear, left top, left bottombottom, from(rgb(240,240,240)), to(rgb(204,204,204)));  
+    background : -moz-linear-gradient(top, rgb(240,240,240), rgb(204,204,204));  
+    height: 18px;  
+} 
+
+ ul {
+	margin: 0;
+	padding: 0;
+	z-index: 300;
+	position: absolute;
+	width: 982px;
+	height: 28px;
+}  
+ul li {  
+    list-style: none;  
+    float:left;  
+  
+    text-align: center;  
+    }  
+  
+ul li a {  
+    padding: 0 20px;  
+    text-align: center;  
+    } 
+	.floatr {  
+    position: absolute;  
+    top: 10px;  
+    z-index: 50;  
+    width: 70px;  
+    height: 30px;  
+    border-radius : 8px;  
+    -moz-border-radius : 8px;  
+    -webkit-border-radius : 8px;  
+    background : rgba(0,0,0,.20);  
+    -webkit-transition: all .4s ease-in-out;  
+    -moz-transition: all .4s ease-in-out;  
+}  
+  
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-weight: normal;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 1100px;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background-image: url(images/header-bk.jpg);
+	height: 179px;
+}
+.header2 {
+	background-image: url(images/header-bk.jpg);
+	height: 100px;
+}
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	background-color: #FFF;
+	border-radius : 10px;  
+    -moz-border-radius : 10px;  
+    -webkit-border-radius : 10px;
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);  
+    -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);   
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	margin-top: 20px;
+	padding-top: 10px;
+	padding-right: 0;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	border: 1px solid #999;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	border-radius : 10px;  
+    -moz-border-radius : 10px;  
+    -webkit-border-radius : 10px; 
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.magenta {  
+    background : rgb(190,64,120);  
+    background : -webkit-gradient(linear, left top, left bottombottom, from(rgb(190,64,120)), to(rgb(177,24,91)));  
+    background : -moz-linear-gradient(top,rgb(190,64,120), rgb(177,24,91));  
+    border: 1px solid #841144;  
+  
+}  
+  
+.cyan {  
+    background : rgb(64,181,197);  
+    background : -webkit-gradient(linear, left top, left bottombottom, from(rgb(64,181,197)), to(rgb(7,165,187)));  
+    background : -moz-linear-gradient(top, rgb(64,181,197), rgb(7,165,187));  
+    border: 1px solid #2f8893;  
+  
+}  
+  
+.yellow {  
+    background : rgb(255,199,79);  
+    background : -webkit-gradient(linear, left top, left bottombottom, from(rgb(255,199,79)), to(rgb(255,188,43)));  
+    background : -moz-linear-gradient(top, rgb(255,199,79), rgb(255,188,43));  
+    border: 1px solid #c08c1f;  
+  
+}  
+  
+.orange {  
+    background : rgb(255,133,64);  
+    background : -webkit-gradient(linear, left top, left bottombottom, from(rgb(255,133,64)), to(rgb(255,107,24)));  
+    background : -moz-linear-gradient(top, rgb(255,133,64), rgb(255,107,24));  
+    border: 1px solid #c04f11;  
+  
+}  
+  
+.dark {  
+    background : rgb(89,89,89);  
+    background : -webkit-gradient(linear, left top, left bottombottom, from(rgb(89,89,89)), to(rgb(54,54,54)));  
+    background : -moz-linear-gradient(top, rgb(89,89,89), rgb(54,54,54));  
+    border: 1px solid #272727;  
+  
+}  
+.magenta li a , .cyan li a, .yellow li a , .orange li a, .dark li a{  
+    color: #fff;  
+    text-shadow: 0 -1px 0 rgba(0,0,0,.40);  
+  
+}  
+.statement {
+	float: right;
+	width: 800px;
+	margin-top: 10px;
+}

@@ -1,0 +1,23 @@
+"Batch #",Name,Birthday,User,Lab,Strain,Generation,"Cur Adults","Start Nursery"
+84,fdv,03/30/2009,mrhensle,Leung,TU,outcross/F0,25,200
+126,fdv,11/13/2009,mrhensle,Leung,TU,F1,30,210
+140,young,02/23/2010,zhang383,Leung,AB,F1,9,200
+145,young,02/25/2010,mrhensle,Leung,AB,outcross/F0,33,230
+149,TL,02/24/2010,sbonilla,Leung,TL,F1,32,120
+169,sandy,06/23/2010,mrhensle,Leung,TL,F1,60,100
+170,Tg(gfap:gfp),06/30/2010,mrhensle,Leung,AB,F1,34,100
+182,Mitfa-GFP,08/27/2010,,,AB,F2,3,0
+183,"Mitfa-GFP (negative)",09/17/2010,,,AB,F2,39,0
+184,"Mitfa-GFP (heterozygous)",09/17/2010,,,AB,F2,65,0
+189,TLAB,12/02/2010,mrhensle,Leung,TLAB,F1,56,125
+198,young,12/01/2010,mrhensle,Leung,AB,F1,50,200
+199,TL,12/02/2010,mrhensle,Leung,TL,F2,94,120
+213,AB,03/22/2011,mrhensle,Leung,AB,F3,212,250
+214,pde6c,04/26/2011,mrhensle,Leung,AB,outcross/F0,46,100
+215,AB,04/26/2011,mrhensle,Leung,AB,outcross/F0,70,100
+216,TL,04/26/2011,mrhensle,Leung,TL,outcross/F0,88,100
+217,"AB ",04/29/2011,mrhensle,Leung,AB,outcross/F0,3,0
+218,"TL (Q-room)",04/29/2011,mrhensle,Leung,TL,outcross/F0,4,0
+225,young,08/17/2011,mrhensle,Leung,AB,F1,0,100
+228,"After Eight (aei)",07/31/1677867,,,AB,outcross/F0,60,0
+229,"Monica Fish",10/18/2011,mrhensle,Leung,TL,outcross/F0,,
